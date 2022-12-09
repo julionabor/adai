@@ -1,0 +1,18 @@
+section {
+  width: 1100px;
+}
+.menuFutebol {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0.5em;
+  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+}
+.menuFutebol img{
+  width: 120px;
+}
+.poster {
+  width: 400px;
+}

@@ -1,0 +1,13 @@
+.patrocinadores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2em;
+  width: 90%;
+}
+.patrocinadores img {
+  margin: 1em;
+  width: 11em;
+  height: 8em;
+}

@@ -1,0 +1,10 @@
+.boxProject {
+  width: 60%;
+  margin: 2em 8em;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  display: grid;
+  background-color: #dbd9d9;
+  border: 1px solid #9c9c9c;
+}

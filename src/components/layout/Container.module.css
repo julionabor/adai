@@ -1,0 +1,22 @@
+.container {
+  width: 83%;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  }
+.container h1{
+  margin: 10px 10px;
+  text-align: center;
+  display: grid;
+  background-color: #000;
+  color: #FFBB33;
+  padding: 15px;
+  font-weight: bold;
+}
+.min-height {
+  min-height: 75%;
+}
+

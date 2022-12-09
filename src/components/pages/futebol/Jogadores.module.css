@@ -1,0 +1,18 @@
+.jogadores {
+  display: grid;
+  
+  margin-bottom: 2em;
+  padding: 0.5em;
+  width: 90%;
+  align-content: center;
+}
+.posicao {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+.jogadores h2{
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #000;
+}

@@ -1,0 +1,28 @@
+.section_home {
+  background: #121212 url(../../img/backgrounddark.png) center center/cover no-repeat fixed;
+  margin: 0;
+}
+
+.section_home p {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: #fff;
+  color: #000;
+}
+
+.section_home article{
+  width: 72%;
+  display: grid;
+}
+
+.notices {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  padding: 20px 20px 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
