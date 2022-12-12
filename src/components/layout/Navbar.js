@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { BiEdit, BiHome } from 'react-icons/bi'
-import { FaPoll, FaSlackHash, FaPhoneSquareAlt, FaInfoCircle, FaFutbol, FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaPoll, FaSlackHash, FaPhoneSquareAlt, FaInfoCircle, FaFutbol, FaFacebook, FaInstagram } from 'react-icons/fa'
 
 
 import styles from './Navbar.module.css'
