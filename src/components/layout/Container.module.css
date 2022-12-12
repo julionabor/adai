@@ -1,5 +1,5 @@
 .container {
-  width: 83%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   float: right;
@@ -19,4 +19,11 @@
 .min-height {
   min-height: 75%;
 }
+@media (max-width: 765px){
 
+  .container{
+    width: 100%;
+    margin: 60px 10px 0;
+  }
+
+}

@@ -10,7 +10,19 @@
   background-color: #fff;
   color: #000;
 }
-
+.subtitle{
+  background-color: #ffbb33;
+}
+.subtitle a{
+  border: 1px solid #121212;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000;
+}
+.subtitle a:hover{
+  background-color: #000;
+  color: #ffbb33;
+}
 .section_home article{
   width: 72%;
   display: grid;
@@ -24,5 +36,5 @@
   padding: 20px 20px 0;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }

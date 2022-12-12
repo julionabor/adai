@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { BiEdit, BiHome } from 'react-icons/bi'
-import { FaPoll, FaSlackHash, FaPhoneSquareAlt, FaInfoCircle, FaFutbol } from 'react-icons/fa'
+import { FaPoll, FaSlackHash, FaPhoneSquareAlt, FaInfoCircle, FaFutbol, FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+
 
 import styles from './Navbar.module.css'
 import logo from '../../img/adai.jpg'
@@ -30,37 +31,70 @@ function Navbar () {
           <Link  to="/contact"><FaPhoneSquareAlt /> Contactos</Link>
         </li>
       </ul>
-    
+      
     <div className={styles.enquete}>
-    <FaPoll />
-    <h4>Craque da galera: </h4>
-    <p>Quem foi o melhor jogador do último jogo?</p> <br />
-    <select>
-      <option>Selecione o jogador</option>
-      <option>12- Christian</option>
-      <option>3- Anderson</option>
-      <option>4- Thiago</option>
-      <option>5- Gegê</option>
-      <option>2- João</option>
-      <option>6- Washington</option>
-      <option>8- Hiago</option>
-      <option>7- Di Maria</option>
-      <option>10- Feitosa</option>
-      <option>11- Julio</option>
-      <option>9- Mineiro</option>
-      <option>12- Emanuel</option>
-      <option>13- Vitinho</option>
-      <option>15- Paulo</option>
-      <option>14- Nino</option>
-      <option>16- Angerson</option>
-      <option>18- Henrik</option>
-      <option>17- Lucas</option>
-    </select>
-    <button>Votar</button>
-  
+      <FaPoll />
+      <h4>Craque da galera: </h4>
+      <p>Quem foi o melhor jogador do último jogo?</p> <br />
+      <select>
+        <option>Selecione o jogador</option>
+        <option>12- Christian</option>
+        <option>3- Anderson</option>
+        <option>4- Thiago</option>
+        <option>5- Gegê</option>
+        <option>2- João</option>
+        <option>6- Washington</option>
+        <option>8- Hiago</option>
+        <option>7- Di Maria</option>
+        <option>10- Feitosa</option>
+        <option>11- Julio</option>
+        <option>9- Mineiro</option>
+        <option>12- Emanuel</option>
+        <option>13- Vitinho</option>
+        <option>15- Paulo</option>
+        <option>14- Nino</option>
+        <option>16- Angerson</option>
+        <option>18- Henrik</option>
+        <option>17- Lucas</option>
+      </select>
+      <button>Votar</button>
+    </div>
+  <div className={styles.redes_sociais}>
+        <p>Siga-nos nas redes sociais:</p>
+        <span>
+          <FaFacebook />
+          <FaInstagram />
+        </span>
+      </div>
   </div>
-  </div>
-  </nav>
-  )
+  <div className={styles.menu_responsivo}>
+     <span>
+      <ul>
+        <li>
+        <Link to="/"><BiHome /> </Link>
+        </li>
+        <li>
+          <Link to="/about"><FaSlackHash /></Link>
+        </li>
+        <li>
+          <Link to="/futebol"><FaFutbol /></Link>
+        </li>
+        <li>
+          <Link to="/patrocinadores"><FaInfoCircle /></Link>
+        </li>
+        <li>
+          <Link to="/associar"><BiEdit /></Link>
+        </li>
+        <li>
+        <Link to="/contact"><FaPhoneSquareAlt /></Link>
+        </li>
+       
+      </ul>
+      </span>  
+      
+    </div>
+    
+</nav>
+)
 }
 export default Navbar

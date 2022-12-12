@@ -5,6 +5,7 @@ import barraca from "../../img/barraca.jpg"
 import Card from "../layout/Card"
 
 import styles from './Home.module.css'
+import { Link } from "react-router-dom"
 
 function Home () {
   return (
@@ -12,9 +13,9 @@ function Home () {
     <h1>
         Bem vindo a Associação Desportiva dos Imigrantes
     </h1>
-    <p>Associa-te a nós e obtenha imensas vantagens.<br />
-      Quer saber mais? Clique aqui...
-    </p>
+    <h3 className={styles.subtitle}>Associa-te a nós e obtenha imensas vantagens e descontos em nossos parceiros.
+      Quer saber mais? <br /> <Link to="/Associar" >Clique aqui...</Link>
+    </h3>
     
     <div className={styles.notices}>
       <Card 
