@@ -12,16 +12,20 @@
 }
 .subtitle{
   background-color: #ffbb33;
+  padding: 5px;
 }
 .subtitle a{
   border: 1px solid #121212;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
-  color: #000;
+  background-color: #000;
+  color:#ffbb33;
+  padding: 1px;
+  transition: 0.5s;
 }
 .subtitle a:hover{
-  background-color: #000;
-  color: #ffbb33;
+  color: #000;
+  background-color: #ffbb33;
 }
 .section_home article{
   width: 72%;

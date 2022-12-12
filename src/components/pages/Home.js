@@ -14,7 +14,7 @@ function Home () {
         Bem vindo a Associação Desportiva dos Imigrantes
     </h1>
     <h3 className={styles.subtitle}>Associa-te a nós e obtenha imensas vantagens e descontos em nossos parceiros.
-      Quer saber mais? <br /> <Link to="/Associar" >Clique aqui...</Link>
+      Quer saber mais? <br /> <Link to="/Associar" >Clique aqui</Link>
     </h3>
     
     <div className={styles.notices}>

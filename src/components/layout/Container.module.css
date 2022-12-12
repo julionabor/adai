@@ -24,6 +24,7 @@
   .container{
     width: 100%;
     margin: 60px 10px 0;
+    padding: 5px;
   }
 
 }
