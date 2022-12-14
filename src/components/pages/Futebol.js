@@ -15,25 +15,25 @@ function Futebol() {
       <img src={plantel} className={styles.poster} alt="" />
         <article>
         <div className={styles.menuFutebol} >
-          <div>
+          <div className={styles.item_plantel}>
             <Link to="/jogadores">
               <img src={jogadores} alt="" />
               <p>Jogadores</p>
             </Link>
           </div>
-          <div>
+          <div className={styles.item_plantel}>
             <img src={comissao} alt="" />
             <p>Comissão Técnica</p>
           </div>
-          <div>
+          <div className={styles.item_plantel}>
             <img src={diretoria} alt="" />
             <p>Diretoria</p>
           </div>
-          <div>
+          <div className={styles.item_plantel}>
             <img src={galeria} alt="" />
             <p>Galeria de Fotos</p>
           </div>
-          <div>
+          <div className={styles.item_plantel}>
             <img src={jogos} alt="" />
             <p>Jogos da Época</p>
           </div>

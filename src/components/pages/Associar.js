@@ -1,5 +1,7 @@
 import Input from "./form/Input"
 import SubmitButton from "./form/SubmitButton"
+import { FcApproval } from 'react-icons/fc';
+
 
 import styles from './Associar.module.css'
 
@@ -9,8 +11,16 @@ function Associar () {
       <h1>
         Seja você também um associado da ADAI.
       </h1>
-    <p>Entre em contacto connosco e descubra os benefícios em ser nosso parceiro.</p><br />
     <h3>E você que pretende ser associado, obtenha descontos especiais nos seguintes segmentos:</h3>
+    <div className={styles.section}>
+      <h2>Vantagens de ser associado</h2>
+      <ul className={styles.check_list}>
+        <li><FcApproval /> Desconto de 10% em parceiros</li>
+        <li><FcApproval /> Aulas Funcionais gratuitas</li>
+        <li><FcApproval /> Participar das atividades promovidas pela associação</li>
+        <li><FcApproval /> Entre outras</li>
+      </ul>
+  </div>
     <div className={styles.boxProject}>
     <Input
       label="Nome: "

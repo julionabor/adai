@@ -9,7 +9,7 @@ function Footer (){
                    
       </span>  
       <p className={styles.copy_right}>
-        <FaWhatsapp /><span>Desenvolvido por Julio Nabor</span> &copy; 2022
+        <FaWhatsapp /> <span> Desenvolvido por Julio Nabor</span> &copy_right; 2022
       </p>
     </footer>
   )
