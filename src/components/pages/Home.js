@@ -2,6 +2,7 @@ import assinatura from "../../img/assinatura.jpg"
 import poster from "../../img/adaixnariz.jpg"
 import poster2 from "../../img/travancaxadai.png"
 import barraca from "../../img/barraca.jpg"
+import passista from "../../img/passista.jpg"
 import Card from "../layout/Card"
 
 import styles from './Home.module.css'
@@ -13,11 +14,17 @@ function Home () {
     <h1>
         Bem vindo a Associação Desportiva dos Imigrantes
     </h1>
+    
     <h3 className={styles.subtitle}>Associa-te a nós e obtenha imensas vantagens e descontos em nossos parceiros.
       Quer saber mais? <br /> <Link to="/Associar" >Clique aqui</Link>
     </h3>
     
     <div className={styles.notices}>
+      <Card 
+        img={passista}
+        title="Carnaval SJM"
+        text="Iniciamos os preparativos do nosso carnaval em conjunto com a Camara de São João da madeira."
+      />
       <Card 
         img={assinatura}
         title="Assinatura do contrato"

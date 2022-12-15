@@ -62,8 +62,14 @@
 .redes_sociais {
   color: #FFBB33;
   text-align: center;
-  margin-top: 10px;
+  margin: 5em 2em;
+  
+}
+.redes_sociais a {
   justify-content: space-between;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
 }
 @media (max-width: 765px){
   .menu{

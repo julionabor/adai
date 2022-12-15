@@ -7,13 +7,17 @@ import jogos from '../../img/calendario.png'
 
 import styles from './Futebol.module.css' 
 import { Link } from 'react-router-dom'
+import Enquete from './Enquete'
 
 function Futebol() {
   return (
     <section>
       <h1> Plantel </h1>
-      <img src={plantel} className={styles.poster} alt="" />
-        <article>
+      <div className={styles.topo} >
+        <img src={plantel} alt="" className={styles.poster}   />
+        
+        <Enquete />
+      </div>
         <div className={styles.menuFutebol} >
           <div className={styles.item_plantel}>
             <Link to="/jogadores">
@@ -22,25 +26,32 @@ function Futebol() {
             </Link>
           </div>
           <div className={styles.item_plantel}>
-            <img src={comissao} alt="" />
-            <p>Comissão Técnica</p>
+            <Link to="/comissao">
+              <img src={comissao} alt="" />
+              <p>Comissão Técnica</p>
+            </Link>
           </div>
           <div className={styles.item_plantel}>
-            <img src={diretoria} alt="" />
-            <p>Diretoria</p>
+            <Link to="/diretoria">
+              <img src={diretoria} alt="" />
+              <p>Diretoria</p>
+            </Link>
           </div>
           <div className={styles.item_plantel}>
-            <img src={galeria} alt="" />
-            <p>Galeria de Fotos</p>
+            <Link to="/galeria">
+              <img src={galeria} alt="" />
+              <p>Galeria de Fotos</p>
+            </Link>
           </div>
           <div className={styles.item_plantel}>
-            <img src={jogos} alt="" />
-            <p>Jogos da Época</p>
+            <Link to="/jogos">
+              <img src={jogos} alt="" />
+              <p>Jogos da Época</p>
+            </Link>
           </div>
           
         </div>
 
-      </article>
     </section>
   )
         

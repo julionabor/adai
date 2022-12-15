@@ -1,20 +1,28 @@
-section {
-  width: 100%;
-}
 .menuFutebol {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  margin: 1.5em;
+  flex-wrap: wrap;
+  margin: 2em 0 5em;
   width: 90%;
   justify-content: space-around;
 }
 .menuFutebol img{
   width: 120px;
 }
+
+.topo {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+}
 .poster {
-  width: 400px;
+  max-width: 65%;
 }
 .item_plantel {
   margin: 5px;
+}
+.item_plantel a{
+  text-decoration:solid;
+  color: #000;
+  font-weight: bold;
 }

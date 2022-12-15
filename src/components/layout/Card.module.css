@@ -1,13 +1,15 @@
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 20px;
   transition: 0.3s;
   width: 17em;
   height: 20em;
   margin: 1em;
   padding: 1em;
-  background-color: #fff;
+  background: rgba( 255, 255, 255);
+  box-shadow: 0 8px 32px 0 #c6c6c6;
+ 
+
 }
 .card img {
   width: 100%;

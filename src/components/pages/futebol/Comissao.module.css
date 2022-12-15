@@ -1,0 +1,11 @@
+.comissao{
+  margin: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.comissao img{
+  border-radius: 100px;
+  width: 10em;
+  height: 10em;
+}

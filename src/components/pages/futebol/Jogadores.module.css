@@ -3,6 +3,7 @@
   margin-bottom: 2em;
   padding: 0.5em;
   width: 90%;
+  height: 100%;
   align-content: center;
 }
 .posicao {
@@ -14,4 +15,11 @@
   text-align: center;
   display: inline-block;
   border: 1px solid #000;
+}
+@media (max-width: 765px){
+  .posicao {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }

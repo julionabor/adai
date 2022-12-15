@@ -4,10 +4,16 @@
   text-align: center;
   font-size: 0.8em;
   width: 100%;
-  height: 50px;
+  height: 3em;
+  padding: 1.5em;
   position: fixed;
+  margin-top: 5em;
   bottom: 0;
-  left: 0;
-  padding: 5px;
-  margin-top: 20px;
+}
+.copy_right {
+  padding: 1em;
+}
+.copy_right a{
+  color: rgb(74, 176, 110);
+  font-weight: bold;
 }

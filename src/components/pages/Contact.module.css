@@ -2,6 +2,19 @@
   margin: 2em 5em 8em;
 }
 .msg {
-  width: 55%;
-  height: 40%;
+  padding: 0.7em;
+  width: 35em;
+  height: 30em;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #AAA;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0 rgb(132, 130, 130)
+}
+.msg textarea::placeholder {
+  color: #7b7b7b;
+}
+.msg textarea:focus{
+  background-color: #aaa;
+  color: #fff;
 }

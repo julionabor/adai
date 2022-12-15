@@ -9,11 +9,23 @@
   font-weight: bold;
 }
 .form_control input {
-  padding: .7em;
+  /*padding: .7em;
   border-radius: 0;
   border: 1px solid #9c9c9c;
+  border-style: outset 2px;*/
+  padding: .7em;
+  border-width: 0 0 1px;
+	border-style: solid;
+	border-color: #AAA;
+	border-radius: 5px;
+	box-shadow: 2px 2px 0 rgb(188, 188, 188);
   
 }
 .form_control input::placeholder {
   color: #7b7b7b;
 }
+.form_control input:focus{
+  background-color: #aaa;
+  color: #fff;
+}
+

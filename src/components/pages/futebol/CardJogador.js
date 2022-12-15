@@ -1,8 +1,6 @@
 import styles from './CardJogador.module.css'
 
-import foto from '../../../img/user.png'
-
-function CardJogador ({nome, posicao, idade , natural}) {
+function CardJogador ({nome, posicao, idade , natural, foto}) {
   return (
     <div className={styles.a_box}>
       <div className={styles.img_container}>

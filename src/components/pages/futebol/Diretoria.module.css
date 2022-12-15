@@ -1,0 +1,11 @@
+.diretoria{
+  margin: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.diretoria img{
+  border-radius: 100px;
+  width: 12em;
+  height: 12em;
+}

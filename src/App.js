@@ -12,6 +12,9 @@ import Futebol from './components/pages/Futebol';
 import Patrocinadores from './components/pages/Patrocinadores';
 import Associar from './components/pages/Associar';
 import Jogadores from './components/pages/futebol/Jogadores';
+import Comissao from './components/pages/futebol/Comissao';
+import Diretoria from './components/pages/futebol/Diretoria';
+import Galeria from './components/pages/futebol/Galeria';
 
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/jogadores" element={<Jogadores />}></Route>
+            <Route path="/comissao" element={<Comissao />}></Route>
+            <Route path="/diretoria" element={<Diretoria />}></Route>
+            <Route path="/galeria" element={<Galeria />}></Route>
           </Routes>
         </Container>
       <Footer />
