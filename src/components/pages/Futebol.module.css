@@ -26,3 +26,24 @@
   color: #000;
   font-weight: bold;
 }
+.cardInfo{
+  margin: 1.5em;
+  border-radius: 20px;
+  background-color: #000;
+  display: flex;
+  color: #ffbb33;
+  width: 100%;
+  padding: 0.2em;
+  justify-content: space-around;
+  flex-wrap:wrap
+}
+.cardInfo h2{
+  display: inline-block;
+}
+.cardInfo span{
+  margin: 1em;
+  display: flex;
+  border: 1px solid #fff;
+  padding: 1em;
+  font-size: 0.8em;
+}

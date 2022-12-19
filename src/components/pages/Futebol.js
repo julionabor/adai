@@ -15,10 +15,18 @@ function Futebol() {
       <h1> Plantel </h1>
       <div className={styles.topo} >
         <img src={plantel} alt="" className={styles.poster}   />
-        
         <Enquete />
       </div>
         <div className={styles.menuFutebol} >
+          <div className={styles.cardInfo}>
+            <span><p><strong>Próximo Jogo: </strong> "Os Arrifanenses"</p></span>
+            <span><p><strong>Data Jogo: </strong> 17/12 as 19h</p></span>
+            <span><strong>Campeonato: </strong><p> 3º Colocado</p></span>
+            <span><strong>Taça: </strong><p> Oitavos de final</p></span>
+            <span><strong>Melhor Marcador: </strong><p> Mineiro</p></span>
+            <span><strong>Rei das Assistências: </strong><p> João</p></span>
+            <span><strong>Menos golos Sofridos: </strong><p> Christian</p></span>
+          </div>
           <div className={styles.item_plantel}>
             <Link to="/jogadores">
               <img src={jogadores} alt="" />

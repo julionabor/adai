@@ -22,7 +22,6 @@ import nino from '../../../img/jogadores/nino.jpg'
 import raul from '../../../img/jogadores/raul.jpg'
 import foto from '../../../img/user.png'
 
-
 function Jogadores () {
   return (
     <section>
@@ -126,14 +125,14 @@ function Jogadores () {
         <CardJogador
           nome="Ítalo/Di Maria"
           posicao="Médio Centro"
-          idade="27 anos"
+          idade="25 anos"
           natural="Pernambuco/Brasil"
           foto={italo}
         />
         <CardJogador
           nome="Hiago"
           posicao="Médio Defensivo"
-          idade="23 anos"
+          idade="24 anos"
           natural="Paraíba/Brasil"
           foto={hiago}
         />

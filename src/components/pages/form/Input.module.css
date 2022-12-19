@@ -9,10 +9,6 @@
   font-weight: bold;
 }
 .form_control input {
-  /*padding: .7em;
-  border-radius: 0;
-  border: 1px solid #9c9c9c;
-  border-style: outset 2px;*/
   padding: .7em;
   border-width: 0 0 1px;
 	border-style: solid;
@@ -25,7 +21,7 @@
   color: #7b7b7b;
 }
 .form_control input:focus{
-  background-color: #aaa;
-  color: #fff;
+  color: #ffbb33;
+  background-color: #000;
 }
 

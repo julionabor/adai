@@ -1,10 +1,17 @@
 .contact {
-  margin: 2em 5em 8em;
+  width: 80%;
+  margin: 2em 2em 8em;
+  padding: 5px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: grid;
+  background-color: #dbd9d9;
+  border: 1px solid #9c9c9c;
 }
 .msg {
+  min-width: 50%;
+  margin: 10px auto;
   padding: 0.7em;
-  width: 35em;
-  height: 30em;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #AAA;
@@ -15,6 +22,6 @@
   color: #7b7b7b;
 }
 .msg textarea:focus{
-  background-color: #aaa;
-  color: #fff;
+  background-color: #000;
+  color: #ffbb33;
 }
