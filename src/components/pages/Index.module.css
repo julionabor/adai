@@ -1,0 +1,44 @@
+.capa{
+  background: #121212 url(../../img/background.jpg) center center/cover repeat fixed;
+  color: #ffbb33;
+  height: 100vh;
+  max-width: 100%;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+  display: grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.capa h3,p {
+  margin: 15px;
+}
+.capa a {
+  margin: .8em;
+  padding: .5em 4em;
+  background-color: #ffbb33;
+  width: 15em;
+  font-size: 1.5em;
+  border-radius: 1em;
+  border: none;
+  text-decoration: none;
+  color: #000;
+}
+.adai {
+  margin: 1em;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.adai img{
+  float: left;
+  margin: 5px;
+  width: 90px;
+}
+@media (max-width:768px){
+  .menu_responsivo{
+    display: none!important;
+  }
+}

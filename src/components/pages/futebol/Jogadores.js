@@ -21,9 +21,11 @@ import mineiro from '../../../img/jogadores/mineiro.jpg'
 import nino from '../../../img/jogadores/nino.jpg'
 import raul from '../../../img/jogadores/raul.jpg'
 import foto from '../../../img/user.png'
+import Container from '../../layout/Container'
 
 function Jogadores () {
   return (
+    <Container>
     <section>
       <h1>Jogadores</h1>
       <div className={styles.jogadores}>
@@ -261,7 +263,7 @@ function Jogadores () {
       </div>
     </div>
     </section>
-
+  </Container>
   )
 }
 export default Jogadores

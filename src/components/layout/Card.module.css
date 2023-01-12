@@ -2,14 +2,13 @@
   /* Add shadows to create the "card" effect */
   border-radius: 20px;
   transition: 0.3s;
-  width: 17em;
-  height: 20em;
-  margin: 1em;
+  width: 18em;
+  margin: .8em;
   padding: 1em;
   background: rgba( 255, 255, 255);
   box-shadow: 0 8px 32px 0 #c6c6c6;
- 
-
+  display: block;
+  flex-wrap: wrap;
 }
 .card img {
   width: 100%;
@@ -22,4 +21,8 @@
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+  
+}
+.container p {
+  font-size: .8em;
 }

@@ -17,3 +17,9 @@
   color: rgb(74, 176, 110);
   font-weight: bold;
 }
+@media (max-width: 768px){
+  .footer{
+    width: 100%;
+  }
+  
+}

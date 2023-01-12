@@ -7,9 +7,11 @@ import Card from "../layout/Card"
 
 import styles from './Home.module.css'
 import { Link } from "react-router-dom"
+import Container from "../layout/Container"
 
 function Home () {
   return (
+    <Container>
     <section className={styles.section_home}>
     <h1>
         Bem vindo a Associação Desportiva dos Imigrantes
@@ -23,7 +25,7 @@ function Home () {
       <Card 
         img={passista}
         title="Carnaval SJM"
-        text="Iniciamos os preparativos do nosso carnaval em conjunto com a Camara de São João da madeira."
+        text="Iniciamos os preparativos do nosso carnaval em conjunto com a Camara de São João da Madeira."
       />
       <Card 
         img={assinatura}
@@ -47,6 +49,7 @@ function Home () {
       />
     </div>
   </section>
+  </Container>
   )
 }
 export default Home

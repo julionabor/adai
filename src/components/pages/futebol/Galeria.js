@@ -1,15 +1,16 @@
 
 import fotografa from '../../../img/kamylle.png'
+import Container from '../../layout/Container'
 import FotosGaleria from './FotosGaleria'
-
 
 import styles from './Galeria.module.css'
 
 function Galeria () {
   return (
-    <section>
-      <h1>Galeria de fotos</h1>
-      <div className={styles.galeria}>
+    <Container>
+      <section>
+        <h1>Galeria de fotos</h1>
+        <div className={styles.galeria}>
           <div className={styles.fotografa} >
             <a href="https://instagram.com/kamyllefotografias" target="blank"><img src={fotografa} alt="" /></a>
             <h5>Fotógrafa:</h5> 
@@ -23,6 +24,7 @@ function Galeria () {
           </div>
       </div>
     </section>
+    </Container>
 
   )
 }

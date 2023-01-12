@@ -1,8 +1,11 @@
 .enquete {
   width: 20%;
+  height: auto;
 }
 
 .enquete img{
   cursor: pointer;
 }
-
+.enquete select {
+  margin-bottom: 5em;
+}

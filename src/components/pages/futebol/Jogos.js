@@ -1,7 +1,9 @@
+import Container from '../../layout/Container'
 import styles from './Jogos.module.css'
 
 function Jogos () {
   return (
+    <Container>
     <section>
       <h1>Jogos</h1>
 
@@ -79,7 +81,7 @@ function Jogos () {
         <tr>
           <td>01/10/2022</td>
           <td>Travanca</td>
-          <td>7x4</td>
+          <td>4x7</td>
           <td>ADAI</td>
           <td>Raul (3), Mineiro (2x), Henrik, André </td>
         </tr>
@@ -108,7 +110,7 @@ function Jogos () {
           <td>19/11/2022</td>
           <td>ADAI</td>
           <td>0x1</td>
-          <td>ADRAC Rêgo</td>
+          <td>Rêgo</td>
           <td>-</td>
         </tr>
         <tr>
@@ -142,7 +144,7 @@ function Jogos () {
         <tr>
           <td>07/01/2023</td>
           <td>Reguenga Palhota</td>
-          <td>x</td>
+          <td>2x0</td>
           <td>ADAI</td>
           <td></td>
         </tr>
@@ -204,6 +206,7 @@ function Jogos () {
         </tr>
       </table>
     </section>
+  </Container>
   )
 }
 export default Jogos

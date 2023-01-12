@@ -1,9 +1,8 @@
 .imgAbout {
   width: 58%;
-  height: 300px;
   margin: auto;
 }
 .textAbout{
-  margin: 2em;
-  padding: 15px;
+  margin: 2em 1em;
+  padding: 10px;
 }

@@ -3,9 +3,11 @@ import auxiliar from '../../../img/comissao/julio.jpg'
 import treinador_goleiro from '../../../img/comissao/jesse.jpg'
 
 import styles from './Comissao.module.css'
+import Container from '../../layout/Container'
 
 function Comissao () {
   return (
+    <Container>
     <section>
         <h1>Comissão Técnica</h1>
         <div className={styles.comissao}>
@@ -26,7 +28,7 @@ function Comissao () {
             </div>
           </div>
     </section>
-
+  </Container>
   )
 }
 export default Comissao
