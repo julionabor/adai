@@ -1,10 +1,9 @@
-import { useId, useState} from "react";
+import { useState} from "react";
 import "react-responsive-modal/styles.css";
 import styles from './Enquete.module.css'
 import { Modal } from "react-responsive-modal";
 import trofeu from '../../img/trofeu.jpg'
 import { FaPoll } from "react-icons/fa";
-import { useParams } from "react-router-dom";
 import Option from "./form/Option";
 import SubmitButton from "./form/SubmitButton";
 
@@ -13,7 +12,6 @@ import SubmitButton from "./form/SubmitButton";
     const [open, setOpen] = useState(false)
     const [voto, setVoto] = useState('')
     const [resultado, setResultado] = useState([])
-    const id  = useId()
 
     const [showList, setShowList] = useState([])
     const [showResult, setShowResult] = useState(false)
