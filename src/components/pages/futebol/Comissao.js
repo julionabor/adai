@@ -8,7 +8,6 @@ import Container from '../../layout/Container'
 function Comissao () {
   return (
     <Container>
-    <section>
         <h1>Comissão Técnica</h1>
         <div className={styles.comissao}>
             <div>
@@ -27,7 +26,6 @@ function Comissao () {
               <p>Idade: 31 anos</p>
             </div>
           </div>
-    </section>
   </Container>
   )
 }

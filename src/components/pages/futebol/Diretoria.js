@@ -8,7 +8,6 @@ import Container from '../../layout/Container'
 function Diretoria () {
   return (
     <Container>
-      <section>
       <h1>Diretoria</h1>
       <div className={styles.diretoria}>
           <div>
@@ -27,7 +26,6 @@ function Diretoria () {
             <p>Idade: 40 anos</p>
           </div>
         </div>
-      </section>
   </Container>
   )
 }

@@ -4,7 +4,6 @@ import styles from './Jogos.module.css'
 function Jogos () {
   return (
     <Container>
-    <section>
       <h1>Jogos</h1>
 
       <table className={styles.tabela}>
@@ -205,7 +204,6 @@ function Jogos () {
           <td>-</td>
         </tr>
       </table>
-    </section>
   </Container>
   )
 }

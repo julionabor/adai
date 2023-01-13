@@ -16,7 +16,6 @@
   width: 80%;
   margin: 0.5em auto;
   list-style: none;
-  align-items: center;
   text-align: left;
   flex-direction: column;
 }
@@ -73,7 +72,6 @@
     top: 50%;
     width: 30px;
     height: 7px;
-    border: 1px solid #000;
     background: #FFBB33;
     position: absolute;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -118,7 +116,6 @@
   .icon.iconActive .hamburguer:before {
     top: 0;
     background: #FFBB33;
-    border: 1px solid #000;
     transform: rotate(135deg);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   }
@@ -126,29 +123,29 @@
     display: block;
     background-color: #000;
     box-shadow: 10px 0px 0px rgba(0, 0, 0, 0.59);
-    width: 60%;
+    width: 70%;
     height: 80vh;
     position: absolute;
     z-index: 1;
-    padding: 15px;
+    padding: 10px;
   }
   .menu .menuClose{
     display: none;
     width: 0px;
   }
   .list {
-    color:#FFBB33;
+    color:#fff;
     list-style: none;
     text-align: left;
     flex-direction: column;
-    
+
   }
   .item {
-    margin: 0.5em;
+    margin-left: 1em;
   }
   
   .item a {
-    color: #FFBB33;
+    color: #FFF;
     text-decoration: none;
     font-weight: bold;
   }

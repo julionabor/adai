@@ -10,8 +10,9 @@ function Container (props) {
     <Navbar />
     <div className={`${styles.container}  ${styles[props.customClass]}`}>
       {props.children}
+      <Footer />
     </div>
-    <Footer />
+      
     </>
   )
 }

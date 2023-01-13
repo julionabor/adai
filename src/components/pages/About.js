@@ -6,7 +6,6 @@ import styles from './About.module.css'
 function About() {
   return(
     <Container>
-      <section>
         <h1> Sobre Nós</h1>
         <img src={assinatura} alt="Assinatura" className={styles.imgAbout} />
           <article className={styles.textAbout} >
@@ -20,7 +19,6 @@ function About() {
             e entre outros. 
           </p>
         </article>
-    </section>
   </Container>
   )
 }

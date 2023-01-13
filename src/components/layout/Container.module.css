@@ -1,22 +1,25 @@
 .container {
   height: 100vh;
   width: 80%;
+  margin: 0 auto 0;
   display: flex;
   flex-wrap: wrap;
   float: right;
   text-align: center;
+  align-items: center;
   justify-content: space-between;
-  margin-bottom: 4em;
   }
 .container h1{
-  margin: 10px 10px;
-  width: 95%;
   text-align: center;
   display: grid;
   background-color: #000;
   color: #FFBB33;
   padding: 10px;
   font-weight: bold;
+}
+.container h1,h3 {
+  margin: 10px 10px;
+  width: 90%;
 }
 
 
@@ -26,7 +29,7 @@
     width: 100%;
   }
   .container h1{
-    width: 85%;
+    width: 90%;
     margin-left: 10%;
     align-items: center;
     justify-content: center;

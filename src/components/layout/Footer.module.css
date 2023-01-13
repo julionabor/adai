@@ -1,21 +1,26 @@
 .footer {
+  position: static;
   color: #FFF;
   background-color: #000;
   text-align: center;
-  font-size: 0.8em;
   width: 100%;
-  height: 3em;
-  padding: 1.5em;
-  position: fixed;
-  margin-top: 5em;
+  height: 13%;
+  padding: 1em;
+  line-height: 5%;
+  font-size: 0.8em;
+  margin: 0;
   bottom: 0;
 }
 .copy_right {
-  padding: 1em;
+  align-items: center;
 }
 .copy_right a{
+  color: #FFF;
+}
+.whatsapp a{
   color: rgb(74, 176, 110);
   font-weight: bold;
+  text-decoration: none;
 }
 @media (max-width: 768px){
   .footer{

@@ -55,7 +55,8 @@ function Navbar () {
       </div>
     
   
-        {active &&
+      {active &&
+       <> 
       <div className={active ? (`${styles.menu_responsivo} ${styles.menuOpen}`) : `${styles.menu_responsivo} ${styles.menuClose}`}> 
         <ul className={styles.list}>
           <li className={styles.item}>
@@ -77,7 +78,15 @@ function Navbar () {
             <Link to="/contact"><FaPhoneSquareAlt />Contactos</Link>
           </li>
         </ul> 
-      </div>
+            <div className={styles.redes_sociais}>
+              <p>Siga-nos nas redes sociais:</p>
+              <span>
+                <a href="/"><FaFacebook /></a>
+                <a href="https://www.instagram.com/adesportivaimigrante"><FaInstagram /></a>
+              </span>
+            </div>
+        </div>
+        </>
         }
   </div>
   )

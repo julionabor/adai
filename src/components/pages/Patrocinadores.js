@@ -12,10 +12,7 @@ import styles from './Patrocinadores.module.css'
 function Patrocinadores () {
   return (
     <Container>
-      <section>
-        <h1>
-          Seja você também um patrocinador da Associação.
-        </h1>
+        <h1> Seja você também um patrocinador da Associação. </h1>
         <p>Entre em contacto connosco e descubra os benefícios em ser nosso parceiro.</p><br />
         <h3>E você que pretende ser associado, obtenha descontos especiais nos seguintes segmentos:</h3>
         <div className={styles.patrocinadores}>
@@ -27,7 +24,6 @@ function Patrocinadores () {
           <img src={patrocinador6} alt="48 e Pico" />
           <img src={patrocinador7} alt="48 e Pico" />
         </div>
-      </section>
     </Container>
   )
 }

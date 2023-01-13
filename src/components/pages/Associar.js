@@ -44,7 +44,7 @@ function Associar () {
 
   return (
     <Container>
-    <section>
+    
       <h1>
         Seja você também um associado da ADAI.
       </h1>
@@ -85,7 +85,6 @@ function Associar () {
           <SubmitButton text="Tornar Associado" />
         </form>
       </div>
-    </section>
   </Container>
   )
 }

@@ -9,9 +9,9 @@
   border: 1px solid #9c9c9c;
 }
 .msg {
-  min-width: 50%;
+  min-width: 80%;
   margin: 10px auto;
-  padding: 0.7em;
+  padding: 1em;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #AAA;

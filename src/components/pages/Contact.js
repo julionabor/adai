@@ -46,7 +46,6 @@ function Contact() {
   }
   return (
     <Container>
-      <section>
         <h1>Contactos</h1>
           <p>Entre em contacto connosco e descubra os benefícios em ser nosso parceiro.</p><br />
           <h3>E você que pretende ser associado, obtenha descontos especiais nos seguintes segmentos:</h3>
@@ -85,7 +84,6 @@ function Contact() {
               <SubmitButton text="Enviar" />
             </form>
           </div>
-      </section>
     </Container>
   )
 }
