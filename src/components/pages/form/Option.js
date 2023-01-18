@@ -1,7 +1,7 @@
-function Option ({ props, key}) {
+function Option ({ props , id}) {
   return (
     <>
-      <option value={props} key={key} >{props}</option>
+      <option value={props} key={id}>{props}</option>
     </>
   )
 }

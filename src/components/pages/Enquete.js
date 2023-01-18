@@ -1,4 +1,5 @@
 import { useState} from "react";
+// import { useParams } from "react-router-dom";
 import "react-responsive-modal/styles.css";
 import styles from './Enquete.module.css'
 import { Modal } from "react-responsive-modal";
@@ -8,7 +9,6 @@ import Option from "./form/Option";
 import SubmitButton from "./form/SubmitButton";
 
   function Enquete () {
-    
     const [open, setOpen] = useState(false)
     const [voto, setVoto] = useState('')
     const [resultado, setResultado] = useState([])
@@ -22,9 +22,9 @@ import SubmitButton from "./form/SubmitButton";
     let onCloseModal = () => {
       setOpen(false);
     }
-  function Votar () {
+  async function Votar () {
       
-      fetch(`http://localhost:5000/enquete/`,{
+      await fetch(`http://localhost:5000/enquete/`,{
           method : 'GET',
           headers: {
                 'Content-Type' : 'application/json'
@@ -33,73 +33,72 @@ import SubmitButton from "./form/SubmitButton";
       .then((data) => data.json())
       .then((response) => {
         return setShowList(response)
-        },[])
+        })
         .catch((err) => console.log(err))
           
     }
     function SubmitVoto(e){
       e.preventDefault()
-      
-        //var nome = document.getElementById("voto").value
-        //console.log(nome)
-        fetch(`http://localhost:5000/enquete/`,{
-          method : 'GET',
-          headers: {
-                'Content-Type' : 'application/json'
+      setResultado(showList)
+      showList.map((item) => {
+          if(item.name === voto){
+            item.votos++
+            
+            fetch(`http://localhost:5000/enquete/${item.id}/`,{
+              method: 'PATCH',
+              headers: {
+                'Content-Type' : 'application/json',
               },
-        })
-      .then((data) => data.json())
-      .then((response) => {
-       /* response.map((item) => 
-          ( item.name === nome ? (console.log(item.votos++)) : console.log("Voto não computado!"))
-          )*/
-          setResultado(response)
-          toggleResult(setShowResult(true))
-        })
-        .catch((err) => console.log(err))
-      
-    function toggleResult(){
-      setShowResult(!showResult)
-    } 
-  }
+              body: JSON.stringify(item)
+            })
+            .then((data) => data.json())
+            .catch((err) => console.log(err))
+          }
+        }
+      )
+      setShowResult(true)
+       
+    }
+    
+  
   return (
       <div className={styles.enquete}>
         <img src={trofeu} alt="" onClick={onOpenModal} />
         <legend>Vote aqui no craque do jogo</legend>
-        <strong>ADAI 0 x 1 Arrifanenses</strong>
+        <strong>Reguenga Palhota 2 x 0 ADAI </strong>
         <Modal open={open} onClose={onCloseModal}>
       <div>
       <FaPoll />
       <h4>Craque da galera: </h4>
       { !showResult ? (
         <>
-          <p>Quem foi o melhor jogador do último jogo?</p> <br />
+          <p>Quem foi o nosso melhor jogador do último jogo?</p> <br />
           <form onSubmit={SubmitVoto}>
-              <select id="nome" name={voto} 
+              <select id="nome" name={voto}
                 onChange={(e)=> setVoto(e.target.value)}
               >
                 <option value="Selecione o jogador">Selecione o jogador</option>
-              { showList.map((item,index) => (
-               
+              { showList ?
+              showList.map((item,index) => (
                 <Option
                   props={item.name}
                   key={index}
-                  
+                  value={index}
                 />
-                  ))}
+              )) : <p>Não há jogadores a apresentar</p>}
               </select>
               <SubmitButton text="Votar" />
           </form>
         </>
         ):(
-          <>
-            <h3> Resultados</h3> <br />
-            <p>Jogador | Votos</p> <br />
-              
-            { resultado.map((item) => 
-             <div key={item.id}> {item.name} - {item.votos} </div> ) }
+          <div className={styles.resultado}>
+            <h3> Resultados</h3> 
+            <h4>Jogador | Votos</h4>
+           {  
+             resultado.map((element,index) =>  <p key={index}>  {element.name} - {element.votos} </p>) 
+            }
             
-          </>
+          </div>
         )}
         </div>
       </Modal>
