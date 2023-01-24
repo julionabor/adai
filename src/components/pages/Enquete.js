@@ -39,9 +39,9 @@ import SubmitButton from "./form/SubmitButton";
     function SubmitVoto(e){
       e.preventDefault()
       setResultado(showList)
-      showList.map((item) => {
-          if(item.name === voto){
-            item.votos++
+      showList.map(item =>  {
+        if( item.name === voto ) {
+             item.votos++
             
             fetch(`http://localhost:5000/enquete/${item.id}/`,{
               method: 'PATCH',
@@ -50,12 +50,15 @@ import SubmitButton from "./form/SubmitButton";
               },
               body: JSON.stringify(item)
             })
-            .then((data) => data.json())
+            .then(data => data.json())
             .catch((err) => console.log(err))
           }
-        }
+          return setShowResult(true)
+        }  
       )
-      setShowResult(true)
+    
+      
+     
        
     }
   return (
