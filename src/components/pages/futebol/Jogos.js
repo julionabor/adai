@@ -148,18 +148,25 @@ function Jogos () {
           <td></td>
         </tr>
         <tr>
+          <td>13/01/2023</td>
+          <td>Nadais</td>
+          <td>2x2</td>
+          <td>ADAI</td>
+          <td>Nino e Lucas</td>
+        </tr>
+        <tr>
           <td>21/01/2023</td>
           <td>Pigeirense</td>
-          <td>x</td>
+          <td>7x1</td>
           <td>ADAI</td>
-          <td></td>
+          <td>Anderson</td>
         </tr>
         <tr>
           <td>04/02/2023</td>
           <td>ADAI</td>
           <td>x</td>
           <td>Real Sociedade da Praça</td>
-          <td>-</td>
+          <td></td>
         </tr>
         <tr>
           <td>11/02/2023</td>

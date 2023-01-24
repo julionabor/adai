@@ -50,13 +50,7 @@ function Futebol() {
               <p>Jogos da Época</p>
             </Link>
           </div>
-          <div className={styles.cardInfo}>
-            <span><p><strong>Próximo Jogo: </strong> "Os Arrifanenses"</p></span>
-            <span><p><strong>Data Jogo: </strong> 17/12 as 19h</p></span>
-            <span><strong>Campeonato: </strong><p> 3º Colocado</p></span>
-            <span><strong>Melhor Marcador: </strong><p> Mineiro</p></span>
-            <span><strong>Rei das Assistências: </strong><p> João</p></span>
-          </div>
+          
         </div>
 
     </Container>

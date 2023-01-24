@@ -1,5 +1,4 @@
 import { useState} from "react";
-// import { useParams } from "react-router-dom";
 import "react-responsive-modal/styles.css";
 import styles from './Enquete.module.css'
 import { Modal } from "react-responsive-modal";
@@ -30,9 +29,9 @@ import SubmitButton from "./form/SubmitButton";
                 'Content-Type' : 'application/json'
               },
         })
-      .then((data) => data.json())
-      .then((response) => {
-        return setShowList(response)
+        .then((data) => data.json())
+        .then((response) => {
+          return setShowList(response)
         })
         .catch((err) => console.log(err))
           
@@ -59,8 +58,6 @@ import SubmitButton from "./form/SubmitButton";
       setShowResult(true)
        
     }
-    
-  
   return (
       <div className={styles.enquete}>
         <img src={trofeu} alt="" onClick={onOpenModal} />
