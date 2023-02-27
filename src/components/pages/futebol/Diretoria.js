@@ -1,14 +1,16 @@
 import presidente from '../../../img/diretoria/ronaldo.jpg'
-import diretor1 from '../../../img/diretoria/luciano.jpg'
+import diretor1 from '../../../img/diretoria/luciano2.jpg'
 import diretor2 from '../../../img/diretoria/renato.jpg'
 
 import styles from './Diretoria.module.css'
 import Container from '../../layout/Container'
+import Voltar from '../Voltar'
 
 function Diretoria () {
   return (
     <Container>
       <h1>Diretoria</h1>
+      <Voltar />
       <div className={styles.diretoria}>
           <div>
             <img src={presidente} alt="" />

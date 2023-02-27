@@ -1,10 +1,12 @@
 import Container from '../../layout/Container'
+import Voltar from '../Voltar'
 import styles from './Jogos.module.css'
 
 function Jogos () {
   return (
     <Container>
       <h1>Jogos</h1>
+      <Voltar />
 
       <table className={styles.tabela}>
         <tr>

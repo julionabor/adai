@@ -8,6 +8,7 @@ import styles from './Associar.module.css'
 
 import emailjs from '@emailjs/browser'
 import Container from "../layout/Container";
+import Voltar from "./Voltar";
 
  function PlanoIndividual(){
   const [name, setName] = useState('')
@@ -52,6 +53,7 @@ import Container from "../layout/Container";
   return(
   <Container>
     <div className={styles.boxProject}>
+        <Voltar />
         <h1>Plano Individual</h1>
           {msg && <Message type={type} msg={msg} />}
           <form className="form" onSubmit={sendEmail} >

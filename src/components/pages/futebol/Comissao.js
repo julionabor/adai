@@ -4,11 +4,13 @@ import treinador_goleiro from '../../../img/comissao/jesse.jpg'
 
 import styles from './Comissao.module.css'
 import Container from '../../layout/Container'
+import Voltar from '../Voltar'
 
 function Comissao () {
   return (
     <Container>
         <h1>Comissão Técnica</h1>
+        <Voltar />
         <div className={styles.comissao}>
             <div>
               <img src={treinador} alt="" />

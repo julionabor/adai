@@ -6,6 +6,7 @@ import Message from "./Message";
 
 import styles from './Associar.module.css'
 import mbway from '../../img/mbway.png'
+import Voltar from "./Voltar";
 
 function PlanoFamiliar(){
 
@@ -19,6 +20,7 @@ function PlanoFamiliar(){
   const [msg, setMsg] = useState('')
   const [type, setType] = useState('')
   const [membros, setMembros] = useState('')
+
   function sendEmail(e) {
     e.preventDefault()
     
@@ -33,6 +35,8 @@ function PlanoFamiliar(){
   return(
     <Container>
     <div className={styles.boxProject}>
+      
+        <Voltar />
         <h1>Plano Familiar</h1>
           {msg && <Message type={type} msg={msg} />}
           <form className="form" onSubmit={sendEmail} >
@@ -118,7 +122,7 @@ function PlanoFamiliar(){
 
               <input type="radio" id="methodPayment" value="MBWAY" checked/>
               <img src={mbway} alt ="" className={styles.mbway} /> <strong>Valor:</strong> 12,50€
-              
+
               <p><input type="checkbox" name="rgpd" onChange={(e) => setrgpd(e.target.value)} /> Autorizo o tratamento dos meus dados por parte da ADAI </p>
               <SubmitButton text="Submeter Pedido" />
             </form>

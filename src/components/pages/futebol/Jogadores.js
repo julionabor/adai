@@ -2,32 +2,30 @@ import CardJogador from './CardJogador'
 import styles from './Jogadores.module.css'
 
 import christian from '../../../img/jogadores/christian.jpg'
-import emanuel from '../../../img/jogadores/emanuel.jpg'
 import anderson from '../../../img/jogadores/anderson.jpg'
 import thiago from '../../../img/jogadores/thiago.jpg'
 import angerson from '../../../img/jogadores/angerson.jpg'
 import beto from '../../../img/jogadores/beto.jpg'
 import delcio from '../../../img/jogadores/delcio.jpg'
 import edu from '../../../img/jogadores/edu.jpg'
-import feitosa from '../../../img/jogadores/feitosa.jpg'
 import guibala from '../../../img/jogadores/guibala.jpg'
 import henrik from '../../../img/jogadores/henrik.jpg'
 import hiago from '../../../img/jogadores/hiago.jpg'
 import italo from '../../../img/jogadores/italo.jpg'
 import jonatas from '../../../img/jogadores/jonatas.jpg'
 import Julio from '../../../img/jogadores/Julio.jpg'
-import marcus_vinicios from '../../../img/jogadores/marcus_vinicios.jpg'
 import mineiro from '../../../img/jogadores/mineiro.jpg'
 import nino from '../../../img/jogadores/nino.jpg'
-import raul from '../../../img/jogadores/raul.jpg'
 import foto from '../../../img/user.png'
 import Container from '../../layout/Container'
+import Voltar from '../Voltar'
 
 function Jogadores () {
   return (
     <Container>
     <section>
       <h1>Jogadores</h1>
+      <Voltar />
       <div className={styles.jogadores}>
         <h2>Guarda Redes</h2>
         <div className={styles.posicao}>
@@ -38,13 +36,7 @@ function Jogadores () {
           natural="Minas Gerais/Brasil"
           foto={christian}
         />
-        <CardJogador
-          nome="Emanuel"
-          posicao="Guarda Redes"
-          idade="28 anos"
-          natural="Maceda/Portugal"
-          foto={emanuel}
-        />
+       
       </div>
       <h2>Defesas</h2>
       <div className={styles.posicao}>
@@ -70,29 +62,17 @@ function Jogadores () {
           foto={foto}
         />
         <CardJogador
-          nome="Lucas Poli/Gegê"
+          nome="Gegê"
           posicao="Defesa Central /Médio Centro"
           idade="28 anos"
           natural="Minas Gerais/Brasil"
           foto={foto}
         />
-        <CardJogador
-          nome="Ricardinho"
-          posicao="Defesa Central"
-          idade="38 anos"
-          natural="São Paulo/Brasil"
-          foto={foto}
-        />
+        
       </div>
       <h2>Laterais</h2>
       <div className={styles.posicao}>
-        <CardJogador
-          nome="João"
-          posicao="Defesa Direito"
-          idade="19 anos"
-          natural="Minas Gerais/Brasil"
-          foto={foto}
-        />
+        
         <CardJogador
           nome="André"
           posicao="Defesa Esquerdo"
@@ -107,15 +87,9 @@ function Jogadores () {
           natural="Pernambuco/Brasil"
           foto={foto}
         />
+       
         <CardJogador
-          nome="Thiaguinho"
-          posicao="Defesa "
-          idade="28 anos"
-          natural="Minas Gerais/Brasil"
-          foto={foto}
-        />
-        <CardJogador
-          nome="Edu / Pedrinho"
+          nome="Pedrinho"
           posicao="Defesa Direito"
           idade="28 anos"
           natural="Minas Gerais/Brasil"
@@ -145,13 +119,7 @@ function Jogadores () {
           natural="Minas Gerais/Brasil"
           foto={foto}
         />
-        <CardJogador
-          nome="Weslley"
-          posicao="Medio Centro"
-          idade="28 anos"
-          natural="-/Brasil"
-          foto={foto}
-        />
+       
         <CardJogador
           nome="Nino"
           posicao="Medio Ofensivo"
@@ -173,13 +141,7 @@ function Jogadores () {
           natural="-/Russo"
           foto={foto}
         />
-        <CardJogador
-          nome="Paqueta"
-          posicao="Medio Ofensivo"
-          idade="19 anos"
-          natural="-/Colombia"
-          foto={foto}
-        />
+        
         <CardJogador
           nome="Henrik"
           posicao="Medio Ofensivo/Extremo"
@@ -194,13 +156,7 @@ function Jogadores () {
           natural="Pernambuco/Brasil"
           foto={Julio}
         />
-        <CardJogador
-          nome="Filipe Feitosa"
-          posicao="Medio Ofensivo"
-          idade="35 anos"
-          natural="Pernambuco/Brasil"
-          foto={feitosa}
-        />
+       
       </div>
         <h2>Avançados</h2>
       <div className={styles.posicao}>
@@ -211,16 +167,10 @@ function Jogadores () {
           natural="Minas Gerais/Brasil"
           foto={mineiro}
         />
-        <CardJogador
-          nome="Raul"
-          posicao="Avançado"
-          idade="28 anos"
-          natural="Ceara/Brasil"
-          foto={raul}
-        />
+        
         <CardJogador
           nome="Lucas"
-          posicao="Extremo/Avançado"
+          posicao="Extremo"
           idade="19 anos"
           natural="Minas Gerais/Portugal"
           foto={foto}
@@ -241,21 +191,15 @@ function Jogadores () {
         />
         <CardJogador
           nome="Beto"
-          posicao="Extremo/Avançado"
+          posicao="Ponta de Lança"
           idade="39 anos"
           natural="Rio de Janeiro/Brasil"
           foto={beto}
         />
-        <CardJogador
-          nome="Marcos Vinicios"
-          posicao="Extremo/Avançado"
-          idade="24 anos"
-          natural="Rio de Janeiro/Brasil"
-          foto={marcus_vinicios}
-        />
+        
         <CardJogador
           nome="Jonatas"
-          posicao="Avançado"
+          posicao="Ponta de Lança"
           idade="32 anos"
           natural="Rio de Janeiro/Brasil"
           foto={jonatas}
