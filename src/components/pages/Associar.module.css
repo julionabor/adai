@@ -5,13 +5,46 @@
   background-color: #dbd9d9;
   border: 1px solid #9c9c9c;
 }
-.section, .boxProject{
+.section, .boxProject, .selectPlan{
   width: 80%;
   margin: auto;
+  margin-bottom: 2em;
   align-items: center;
   justify-content: center;
 }
-
+.selectPlan{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.selectPlan a{
+  text-decoration: none;
+  color: #000;
+}
+.cardPlano{
+  border: .1em solid #dbd9d9;
+  padding: 2em;
+  border-radius: 3em;
+  box-shadow: .4em .3em #dbd9d9;
+  cursor: pointer;
+  margin-bottom: .5em;
+  opacity: 80%;
+}
+.selectPlan :hover {
+  opacity: 100%;
+}
+.selectPlan img{
+  width: 10em;
+}
+.container{
+  align-items: center;
+  display: grid;
+  width: 100%;
+}
+.container h2{
+  margin: .5em;
+  background-color: #FFBB33;
+}
 .section h2{
   background-color: #FFBB33;
   text-align: center;
@@ -28,5 +61,10 @@
   margin-bottom: 0.5rem;
 }
 
+.mbway {
+  width: 3em;
+  align-items: end;
+  margin: 0 .5em;
+}
 
 

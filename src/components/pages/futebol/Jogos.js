@@ -164,23 +164,23 @@ function Jogos () {
         <tr>
           <td>04/02/2023</td>
           <td>ADAI</td>
-          <td>x</td>
+          <td>2x1</td>
           <td>Real Sociedade da Praça</td>
-          <td></td>
+          <td>Mineiro e Gêge</td>
         </tr>
         <tr>
           <td>11/02/2023</td>
           <td>Pessegueiro</td>
-          <td>x</td>
+          <td>2x1</td>
           <td>ADAI</td>
-          <td></td>
+          <td>Julio</td>
         </tr>
         <tr>
           <td>25/02/2023</td>
           <td>ADAI</td>
-          <td>x</td>
+          <td>2x1</td>
           <td>Nariz</td>
-          <td></td>
+          <td>Anderson e Italo (Di Maria)</td>
         </tr>
         <tr>
           <td>04/03/2023</td>
