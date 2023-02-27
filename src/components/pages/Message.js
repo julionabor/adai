@@ -1,4 +1,4 @@
-import { useState, useEffect,useNavigate } from 'react'
+import { useState, useEffect} from 'react'
 import styles from './Message.module.css'
 
 function Message ({type, msg}) {
@@ -17,7 +17,7 @@ function Message ({type, msg}) {
       
     },5000)
     return () => clearTimeout(timer)
-  }, [msg])
+  }, [mensagem])
     
   return (
     <>

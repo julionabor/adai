@@ -23,7 +23,7 @@ import Container from "../layout/Container";
   function sendEmail(e) {
     e.preventDefault()
     
-    if(name === '' || email === '' || contacto === ''){
+    if(name === '' || email === '' || contacto === '' || morada === '' || dataNascimento === '' || codigoPostal === '' || rgpd === ''){
       console.log("entrou")
       setMsg('Erro! Por favor, preencha todos os campos!')
       setType('error')
