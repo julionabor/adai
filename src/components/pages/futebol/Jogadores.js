@@ -16,6 +16,11 @@ import jonatas from '../../../img/jogadores/jonatas.jpg'
 import Julio from '../../../img/jogadores/Julio.jpg'
 import mineiro from '../../../img/jogadores/mineiro.jpg'
 import nino from '../../../img/jogadores/nino.jpg'
+import lucas from '../../../img/jogadores/lucas.jpg'
+import russo from '../../../img/jogadores/russo.jpg'
+import arthur from '../../../img/jogadores/arthur.jpg'
+import feitosa from '../../../img/jogadores/feitosa.jpg'
+import raul from '../../../img/jogadores/raul.jpg'
 import foto from '../../../img/user.png'
 import Container from '../../layout/Container'
 import Voltar from '../Voltar'
@@ -113,8 +118,15 @@ function Jogadores () {
           foto={hiago}
         />
         <CardJogador
+          nome="Arthur"
+          posicao="Médio Defensivo"
+          idade="19 anos"
+          natural="Minas Gerais/Brasil"
+          foto={arthur}
+        />
+        <CardJogador
           nome="Paulo"
-          posicao="Medio Centro/Ofensivo"
+          posicao="Medio Centro"
           idade="28 anos"
           natural="Minas Gerais/Brasil"
           foto={foto}
@@ -134,13 +146,6 @@ function Jogadores () {
           natural="Rio de Janeiro/Brasil"
           foto={guibala}
         />
-        <CardJogador
-          nome="Russo"
-          posicao="Medio Ofensivo/ Defesa Esquerdo"
-          idade="20 anos"
-          natural="-/Russo"
-          foto={foto}
-        />
         
         <CardJogador
           nome="Henrik"
@@ -155,6 +160,13 @@ function Jogadores () {
           idade="25 anos"
           natural="Pernambuco/Brasil"
           foto={Julio}
+        />
+        <CardJogador
+          nome="Feitosa"
+          posicao="Medio Ofensivo"
+          idade="37 anos"
+          natural="Pernambuco/Brasil"
+          foto={feitosa}
         />
        
       </div>
@@ -173,7 +185,7 @@ function Jogadores () {
           posicao="Extremo"
           idade="19 anos"
           natural="Minas Gerais/Portugal"
-          foto={foto}
+          foto={lucas}
         />
         <CardJogador
           nome="Angerson"
@@ -181,6 +193,13 @@ function Jogadores () {
           idade="21 anos"
           natural="Pernambuco/Brasil"
           foto={angerson}
+        />
+        <CardJogador
+          nome="Russo"
+          posicao="Avançado"
+          idade="20 anos"
+          natural="-/Russia"
+          foto={russo}
         />
         <CardJogador
           nome="Delcio"
@@ -203,6 +222,13 @@ function Jogadores () {
           idade="32 anos"
           natural="Rio de Janeiro/Brasil"
           foto={jonatas}
+        />
+        <CardJogador
+          nome="Raul"
+          posicao="Ponta de Lança"
+          idade="26 anos"
+          natural="Ceara/Brasil"
+          foto={raul}
         />
       </div>
     </div>
