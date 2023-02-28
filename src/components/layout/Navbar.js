@@ -29,16 +29,16 @@ function Navbar () {
           <Link to="/futebol"><FaFutbol /> Futebol</Link>
         </li>
         <li className={styles.item}>
-          <Link  to="/patrocinadores"><FaInfoCircle /> Espaço do Comerciante</Link>
+          <Link  to="/comerciante"><FaInfoCircle /> Espaço do Comerciante</Link>
         </li>
         <li className={styles.item}>
-          <Link  to="/patrocinadores"><FaInfoCircle /> Benefícios em ser Sócio</Link>
+          <Link  to="/beneficios"><FaInfoCircle /> Benefícios em ser Sócio</Link>
         </li>
         <li className={styles.item}>
           <Link  to="/associar"><BiEdit /> Quero ser Sócio</Link>
         </li>
         <li className={styles.item}>
-          <Link  to="/patrocinadores"><FaInfoCircle /> Próximos Eventos</Link>
+          <Link  to="/eventos"><FaInfoCircle /> Próximos Eventos</Link>
         </li>
         <li className={styles.item}>
           <Link  to="/patrocinadores"><FaInfoCircle /> Patrocinadores</Link>
