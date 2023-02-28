@@ -14,6 +14,9 @@ import Jogos from './components/pages/futebol/Jogos';
 import Index from './components/pages/Index'
 import PlanoIndividual from './components/pages/PlanoIndividual';
 import PlanoFamiliar from './components/pages/PlanoFamiliar';
+import Eventos from './components/pages/Eventos';
+import Beneficios from './components/pages/Beneficios';
+import Comerciante from './components/pages/Comerciante';
 function Rota(){
   return(
           <Router> 
@@ -32,6 +35,9 @@ function Rota(){
               <Route path="/diretoria" element={<Diretoria />}></Route>
               <Route path="/galeria" element={<Galeria />}></Route>
               <Route path="/jogos" element={<Jogos />}></Route>
+              <Route path="/eventos" element={<Eventos />}></Route>
+              <Route path="/beneficios" element={<Beneficios />}></Route>
+              <Route path="/comerciante" element={<Comerciante />}></Route>
               <Route path="/associar/individual" element={<PlanoIndividual />}></Route>
               <Route path="/associar/familiar" element={<PlanoFamiliar />}></Route>
             </Routes>

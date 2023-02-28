@@ -120,7 +120,7 @@ function PlanoFamiliar(){
               />
               <p>Forma de pagamento do Plano: *</p>
 
-              <input type="radio" id="methodPayment" value="MBWAY" checked/>
+              <input type="radio" id="methodPayment" value="MBWAY" defaultChecked/>
               <img src={mbway} alt ="" className={styles.mbway} /> <strong>Valor:</strong> 12,50€
 
               <p><input type="checkbox" name="rgpd" onChange={(e) => setrgpd(e.target.value)} /> Autorizo o tratamento dos meus dados por parte da ADAI </p>

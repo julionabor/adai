@@ -29,10 +29,19 @@ function Navbar () {
           <Link to="/futebol"><FaFutbol /> Futebol</Link>
         </li>
         <li className={styles.item}>
-          <Link  to="/patrocinadores"><FaInfoCircle /> Patrocinadores</Link>
+          <Link  to="/patrocinadores"><FaInfoCircle /> Espaço do Comerciante</Link>
         </li>
         <li className={styles.item}>
-          <Link  to="/associar"><BiEdit /> Tornar Sócio</Link>
+          <Link  to="/patrocinadores"><FaInfoCircle /> Benefícios em ser Sócio</Link>
+        </li>
+        <li className={styles.item}>
+          <Link  to="/associar"><BiEdit /> Quero ser Sócio</Link>
+        </li>
+        <li className={styles.item}>
+          <Link  to="/patrocinadores"><FaInfoCircle /> Próximos Eventos</Link>
+        </li>
+        <li className={styles.item}>
+          <Link  to="/patrocinadores"><FaInfoCircle /> Patrocinadores</Link>
         </li>
         <li className={styles.item}>
           <Link  to="/contact"><FaPhoneSquareAlt /> Contactos</Link>
@@ -69,11 +78,20 @@ function Navbar () {
             <Link to="/futebol"><FaFutbol />Futebol</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/patrocinadores"><FaInfoCircle />Patrocinadores</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to="/associar"><BiEdit />Tornar Sócio</Link>
-          </li>
+          <Link  to="/comerciante"><FaInfoCircle /> Espaço do Comerciante</Link>
+        </li>
+        <li className={styles.item}>
+          <Link  to="/beneficios"><FaInfoCircle /> Benefícios em ser Sócio</Link>
+        </li>
+        <li className={styles.item}>
+          <Link  to="/associar"><BiEdit /> Quero ser Sócio</Link>
+        </li>
+        <li className={styles.item}>
+          <Link  to="/eventos"><FaInfoCircle /> Próximos Eventos</Link>
+        </li>
+        <li className={styles.item}>
+          <Link  to="/patrocinadores"><FaInfoCircle /> Patrocinadores</Link>
+        </li>
           <li className={styles.item}>
             <Link to="/contact"><FaPhoneSquareAlt />Contactos</Link>
           </li>

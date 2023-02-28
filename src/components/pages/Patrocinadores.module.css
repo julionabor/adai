@@ -1,9 +1,23 @@
 .patrocinadores {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: space-around;
   width: 90%;
+}
+.patrocinadores div{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.patrocinadores a{
+  text-decoration: none;
+}
+.patrocinadores div:nth-child(2n){
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  background-color: #000;
+  color: #ffbb33;
 }
 .patrocinadores img {
   margin: 1em;

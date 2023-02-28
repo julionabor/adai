@@ -19,7 +19,7 @@ function Diretoria () {
           </div>
           <div>
             <img src={diretor1} className={styles.foto_diretoria} alt="" />
-            <h4>Diretor: Luciano Oliveira</h4>
+            <h4>Diretor: Luciano Santos</h4>
             <p>Idade: 40 anos</p>
           </div>
           <div>
