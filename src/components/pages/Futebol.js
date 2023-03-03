@@ -7,7 +7,7 @@ import jogos from '../../img/calendario.png'
 
 import styles from './Futebol.module.css' 
 import { Link } from 'react-router-dom'
-import Enquete from './Enquete'
+
 import Container from '../layout/Container'
 
 function Futebol() {
@@ -16,7 +16,7 @@ function Futebol() {
       <h1> Plantel </h1>
       <div className={styles.topo} >
         <img src={plantel} alt="" className={styles.poster}   />
-        <Enquete />
+        
       </div>
         <div className={styles.menuFutebol} >
           
