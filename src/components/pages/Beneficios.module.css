@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .beneficios{
   width: 100%;
   display: grid;
@@ -7,3 +8,9 @@
   list-style-type: ">";
   justify-content: left;
 }
+=======
+ul {
+  font-weight: 600;
+  list-style-type: ">";
+}
+>>>>>>> 26262c2e263151370f7ccdde6ac8ea7588d40b7d
