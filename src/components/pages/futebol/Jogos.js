@@ -6,8 +6,9 @@ function Jogos () {
   return (
     <Container>
       
-      <Voltar />
       <h1>Jogos</h1>
+      <br/>
+      <Voltar />
 
       <table className={styles.tabela}>
         <tr>
@@ -188,30 +189,30 @@ function Jogos () {
         <tr>
           <td>04/03/2023</td>
           <td>Rêgo</td>
-          <td>x</td>
+          <td>1x3</td>
           <td>ADAI</td>
-          <td></td>
+          <td>Mineiro (x2) e Julio</td>
         </tr>
         <tr>
           <td>11/03/2023</td>
           <td>ADAI</td>
-          <td>x</td>
+          <td>1x2</td>
           <td>Travanca</td>
-          <td></td>
+          <td>Feitosa</td>
         </tr>
         <tr>
           <td>25/03/2023</td>
           <td>ADRAV</td>
-          <td>x</td>
+          <td>0x2</td>
           <td>ADAI</td>
-          <td></td>
+          <td>-</td>
         </tr>
         <tr>
           <td>01/04/2023</td>
           <td>ADAI</td>
           <td>x</td>
           <td>Reguenga Palhota</td>
-          <td>-</td>
+          <td></td>
         </tr>
       </table>
   </Container>

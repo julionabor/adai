@@ -1,13 +1,13 @@
 import plantel from '../../img/postersemfundo.png'
-import jogadores from '../../img/team.png'
-import comissao from '../../img/coach.png'
-import diretoria from '../../img/diretor.png'
-import galeria from '../../img/fotografia.png'
-import jogos from '../../img/calendario.png'
+import jogadores from '../../img/icons/team2.png'
+import comissao from '../../img/icons/coach.png'
+import diretoria from '../../img/icons/diretor.png'
+import galeria from '../../img/icons/fotografia.png'
+import jogos from '../../img/icons/calendario.png'
 
 import styles from './Futebol.module.css' 
 import { Link } from 'react-router-dom'
-import Enquete from './Enquete'
+
 import Container from '../layout/Container'
 
 function Futebol() {
@@ -16,7 +16,7 @@ function Futebol() {
       <h1> Plantel </h1>
       <div className={styles.topo} >
         <img src={plantel} alt="" className={styles.poster}   />
-        <Enquete />
+        
       </div>
         <div className={styles.menuFutebol} >
           

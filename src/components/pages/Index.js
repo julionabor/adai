@@ -1,5 +1,5 @@
-import logo from '../../img/adai1.png'
-import bandeiras from '../../img/bandeira.png'
+import logo from '../../img/logo/adai.png'
+import bandeiras from '../../img/icons/bandeira.png'
 import { Link } from 'react-router-dom'
 
 import styles from './Index.module.css'

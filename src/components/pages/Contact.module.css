@@ -1,12 +1,13 @@
 .contact {
-  width: 80%;
-  margin: 2em 2em 8em;
-  padding: 5px;
+  min-width: 50%;
+  margin: 2em auto 8em;
+  padding: 2.5em;
   flex-wrap: wrap;
   flex-direction: column;
   display: grid;
-  background-color: #dbd9d9;
+  background-color: #000;
   border: 1px solid #9c9c9c;
+  border-radius: 2em;
 }
 .msg {
   min-width: 80%;
@@ -17,11 +18,4 @@
   border-color: #AAA;
   border-radius: 5px;
   box-shadow: 2px 2px 0 rgb(132, 130, 130)
-}
-.msg textarea::placeholder {
-  color: #7b7b7b;
-}
-.msg textarea:focus{
-  background-color: #000;
-  color: #ffbb33;
 }

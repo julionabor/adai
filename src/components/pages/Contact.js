@@ -1,22 +1,60 @@
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
+import axios from 'axios'
+/* import emailjs from '@emailjs/browser' */
 
 import styles from './Contact.module.css'
 import Input from "./form/Input"
 import SubmitButton from "./form/SubmitButton"
 import Message from './Message'
 import Container from '../layout/Container'
+import Textarea from './form/Textarea'
 
 function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [contacto, setContacto] = useState('')
-  const [mensagem, setMensagem] = useState('')
+
+  const [campos, setCampos] = useState({
+    nome: "",
+    email: "",
+    contacto: "",
+    mensagem: ""
+  })
   const [msg, setMsg] = useState('')
   const [type, setType] = useState('')
-
-  function sendEmail(e) {
+  const [button, setButton] = useState('Enviar')
+  
+  function handleInputChange(event){
+    campos[event.target.name] = event.target.value
+    setCampos(campos) 
+  }
+  function handleFormSubmit(e){
     e.preventDefault()
+    setButton("A enviar...")
+    console.log(campos)
+    send()
+  }
+  
+  function send(){
+
+    const formData = new FormData()
+    
+    Object.keys(campos).forEach(key => formData.append(key, campos[key]))
+    axios.post('http://localhost:3030/send', formData, {
+      headers : {
+        "Content-Type": "Application/json"
+      }
+    })
+    .then(response => alert(response.data))
+      setMsg('Pedido de Contacto enviado com sucesso!')
+      setType('success')
+      setButton("Enviar")
+  }
+
+  /* const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [contacto, setContacto] = useState('')
+  const [mensagem, setMensagem] = useState('') */
+  /* function sendEmail(e) {
+    e.preventDefault()
+
     
     if(name === '' || email === '' || contacto === '' || mensagem === ''){
       alert('Preencha todos os campos')
@@ -43,45 +81,43 @@ function Contact() {
       setMsg('Ocorreu um erro no envio da mensagem!')
       setType('error')
     })
-  }
+  } */
   return (
     <Container>
         <h1>Contactos</h1>
-          <p>Entre em contacto connosco e descubra os benefícios em ser nosso parceiro.</p><br />
-          <h3>E você que pretende ser associado, obtenha descontos especiais nos seguintes segmentos:</h3>
+          <h3>Entre em contacto connosco preenchendo os campos abaixo:</h3>
           <div className={styles.contact}>
             {msg && <Message type={type} msg={msg} />}
-            <form onSubmit={sendEmail} >
+            <form onSubmit={handleFormSubmit} >
               <Input
-                name="name"
+                name="nome"
                 type="text"
                 placeholder="Insira o seu nome"
-                onChange={(e) => setName(e.target.value)}
-                value={name}
+                onChange={handleInputChange}
+                
               />
               <Input
                 name="email"
                 type="text"
                 placeholder="Insira o seu e-mail"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
+                onChange={handleInputChange}
+                
               />
               <Input
                 name="contacto"
                 type="tel"
                 placeholder="Insira o seu contacto"
-                onChange={(e) => setContacto(e.target.value)}
-                value={contacto}
+                onChange={handleInputChange}
+                
               />
               
-              <textarea 
+              <Textarea 
                 name="mensagem"
-                className={styles.msg} 
                 placeholder="Escreva a sua mensagem "
-                onChange={(e) => setMensagem(e.target.value)}
-                value={mensagem}
+                onChange={handleInputChange}
+                
                />
-              <SubmitButton text="Enviar" />
+              <SubmitButton text={button} />
             </form>
           </div>
     </Container>

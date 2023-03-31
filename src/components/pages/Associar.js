@@ -1,8 +1,8 @@
 import { FcApproval } from 'react-icons/fc';
 import { Link } from "react-router-dom";
 
-import individual from '../../img/individual.png'
-import familiar from '../../img/familiar.png'
+import individual from '../../img/icons/individual.png'
+import familiar from '../../img/icons/familiar.png'
 
 import styles from './Associar.module.css'
 import Container from "../layout/Container";

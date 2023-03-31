@@ -21,7 +21,9 @@ import russo from '../../../img/jogadores/russo.jpg'
 import arthur from '../../../img/jogadores/arthur.jpg'
 import feitosa from '../../../img/jogadores/feitosa.jpg'
 import raul from '../../../img/jogadores/raul.jpg'
-import foto from '../../../img/user.png'
+
+import foto from '../../../img/icons/user.png'
+
 import Container from '../../layout/Container'
 import Voltar from '../Voltar'
 
@@ -34,6 +36,17 @@ function Jogadores () {
       <div className={styles.jogadores}>
         <h2>Guarda Redes</h2>
         <div className={styles.posicao}>
+        
+        {/* <div className={styles.player} >
+          <div className={styles.front} > <img src={christian} alt="" /></div>
+          <div className={styles.back} >
+            <p>Guarda Redes</p>
+            <p>Clubes:</p>
+            <p>Jogos: 7</p>
+            <p>Gols Sofridos: 5</p>
+          
+          </div>
+        </div> */}
         <CardJogador
           nome="Cristian"
           posicao="Guarda Redes"

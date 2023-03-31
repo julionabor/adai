@@ -1,24 +1,32 @@
 import styles from './Card.module.css'
 import React from 'react';
+
+import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 
-function Card({img,title, text}){
+function Card({...props}){
   const [open, setOpen] = React.useState(false);
  return(
   <>
     <div className={styles.card}>
-      <img src={img} alt="Noticia" />
+      <img src={props.img} alt="Noticia" />
       <div className={styles.container}>
-       <h4><b>{title}</b></h4>
-        <p>{text}</p>
+       <h4><b>{props.title}</b></h4>
+        <p>{props.subtitle}</p>
         <button onClick={() => setOpen(true)}> + Ver mais</button>
         </div>
     </div>
-      <Modal blur="50" open={open} onClose={() => setOpen(false)}>
+      <Modal blur="10" 
+      open={open} 
+      onClose={() => setOpen(false)}
+      center
+      >
     <div className={styles.modal}>
-        <h2>{title}</h2> <br />
-        <img src={img} alt="Noticia" />
-          {text}
+        <h2>{props.title}</h2> <br />
+        <img src={props.img} alt="Noticia" />
+          <strong>{props.subtitle}</strong>
+          <br />
+          {props.text}
     </div>
       </Modal>
   </>

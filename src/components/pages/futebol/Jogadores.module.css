@@ -16,6 +16,41 @@
   display: inline-block;
   border: 1px solid #000;
 }
+.player{
+  height: 400px;
+  width: 220px;
+  position: relative;
+  perspective: 1000px;
+}
+.front,.back{
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition:all 1s ease;
+
+}
+.front{
+  transform: rotateY(0deg);
+    
+}
+.back{
+  transform: rotateY(180deg);
+  background-color: #000;
+  color: #ffbb33;
+
+}
+.player img{
+  width: 250px;
+  height: 320px;
+}
+.player:active .front{
+  transform: rotateY(-180deg);
+}
+.player:active .back{
+  transform: rotateY(0deg);
+}
+
+
 @media (max-width: 765px){
   .posicao {
     display: flex;

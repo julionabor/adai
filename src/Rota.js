@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
+import { Routes, Route, HashRouter  } from 'react-router-dom';
 
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
@@ -17,13 +17,14 @@ import PlanoFamiliar from './components/pages/PlanoFamiliar';
 import Eventos from './components/pages/Eventos';
 import Beneficios from './components/pages/Beneficios';
 import Comerciante from './components/pages/Comerciante';
+
 function Rota(){
   return(
-          <Router> 
+          <HashRouter> 
           
             <Routes>
               <Route path="/" index element={<Index />}></Route>
-              <Route path="/home" index element={<Home />}></Route>
+              <Route path="/home" element={<Home />}></Route>
               <Route path="/about" element={<About />}></Route>
               <Route path="/futebol" element={<Futebol />}></Route> 
               <Route path="/associar" element={<Associar />}></Route>
@@ -42,7 +43,7 @@ function Rota(){
               <Route path="/associar/familiar" element={<PlanoFamiliar />}></Route>
             </Routes>
           
-        </Router>
+        </HashRouter>
   );
 }
 export default Rota

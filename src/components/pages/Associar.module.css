@@ -22,13 +22,13 @@
   color: #000;
 }
 .cardPlano{
+  background: #dbd9d9;
   border: .1em solid #dbd9d9;
   padding: 2em;
   border-radius: 3em;
   box-shadow: .4em .3em #dbd9d9;
   cursor: pointer;
   margin-bottom: .5em;
-  opacity: 80%;
 }
 .selectPlan :hover {
   opacity: 100%;

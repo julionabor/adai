@@ -1,21 +1,21 @@
 .form_control {
   display: grid;
-  flex-direction: column;
   margin: auto;
-  width: 50%;
+  max-width: 90%;
 }
 .form_control label {
   font-weight: bold;
 }
-.form_control input {
-  padding: .5em;
+.form_control input, input:active {
+  padding: 1em;
   margin: .5em;
+  background: 0% 0%;
   border-width: 0 0 1px;
 	border-style: solid;
 	border-color: #AAA;
 	border-radius: 5px;
-	box-shadow: 2px 2px 0 rgb(188, 188, 188);
-  
+	box-shadow: 1px 0 0 rgb(188, 188, 188);
+  color: #ffbb33;
 }
 .form_control input::placeholder {
   color: #7b7b7b;

@@ -1,0 +1,13 @@
+
+.espaco_comerciante{
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card_comerciante{
+    display: grid;   
+    margin: 1em;
+    border: 1px solid #c0c0c0;
+}

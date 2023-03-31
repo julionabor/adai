@@ -5,7 +5,7 @@ import { FaSlackHash, FaPhoneSquareAlt, FaInfoCircle, FaFutbol, FaFacebook, FaIn
 
 
 import styles from './Navbar.module.css'
-import logo from '../../img/adai.jpg'
+import logo from '../../img/logo/adai.png'
 
 function Navbar () {
   const [ active, setMode] = useState(false)

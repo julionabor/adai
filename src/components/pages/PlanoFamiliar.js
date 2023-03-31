@@ -1,11 +1,13 @@
+import { useState } from "react";
+
 import Container from "../layout/Container"
 import SubmitButton from "./form/SubmitButton"
-import { useState } from "react";
+
 import Input from "./form/Input";
 import Message from "./Message";
 
 import styles from './Associar.module.css'
-import mbway from '../../img/mbway.png'
+import mbway from '../../img/icons/mbway.png'
 import Voltar from "./Voltar";
 
 function PlanoFamiliar(){

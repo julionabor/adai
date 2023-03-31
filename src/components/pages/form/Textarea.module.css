@@ -1,0 +1,13 @@
+
+textarea{
+    padding: .5em;
+    margin: .5em;
+    width: 88%;
+    background: 0% 0%;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #AAA;
+    border-radius: 5px;
+    box-shadow: 1px 0 0 rgb(188, 188, 188);
+    color: #ffbb33;
+}

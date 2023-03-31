@@ -2,7 +2,7 @@ import { useState } from "react";
 import Input from "./form/Input";
 import SubmitButton from "./form/SubmitButton";
 import Message from "./Message";
-import mbway from '../../img/mbway.png'
+import mbway from '../../img/icons/mbway.png'
 
 import styles from './Associar.module.css'
 
@@ -28,6 +28,7 @@ import Voltar from "./Voltar";
       console.log("entrou")
       setMsg('Erro! Por favor, preencha todos os campos!')
       setType('error')
+      
       return
     }
     var text = `Tipo de mensagem: Novo Associado; Telefone: ${contacto}`
@@ -55,7 +56,7 @@ import Voltar from "./Voltar";
     <div className={styles.boxProject}>
         <Voltar />
         <h1>Plano Individual</h1>
-          {msg && <Message type={type} msg={msg} />}
+          
           <form className="form" onSubmit={sendEmail} >
               <Input
                 label="Nome do Associado"
@@ -113,14 +114,20 @@ import Voltar from "./Voltar";
                 placeholder="xxxx-xxx"
                 onChange={(e) => setCodigoPostal(e.target.value)}
               />
+              
               <p>Forma de pagamento do Plano: *</p>
 
               <input type="radio" id="methodPayment" value="MBWAY" defaultChecked/>
               <img src={mbway} alt ="" className={styles.mbway} /> <strong>Valor:</strong> 5,00€
 
               <p><input type="checkbox" name="rgpd" onChange={(e) => setrgpd(e.target.value)} /> Autorizo o tratamento dos meus dados por parte da ADAI </p>
+              
+              {msg && <Message type={type} msg={msg} />}
+              
               <SubmitButton text="Submeter Pedido" />
             </form>
+            
+          
     </div>
   </Container>
   )

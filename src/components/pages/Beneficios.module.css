@@ -1,0 +1,9 @@
+.beneficios{
+  width: 100%;
+  display: grid;
+}
+.list {
+  display: grid;
+  list-style-type: ">";
+  justify-content: left;
+}
