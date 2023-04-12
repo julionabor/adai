@@ -105,6 +105,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
 }
 .carnaval img{
   margin: 0.5rem;

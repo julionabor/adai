@@ -22,7 +22,7 @@
   position: relative;
   perspective: 1000px;
 }
-.front,.back{
+/* .front,.back{
   position: absolute;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -48,6 +48,21 @@
 }
 .player:active .back{
   transform: rotateY(0deg);
+} */
+.container_player{
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  gap: 12px;
+  scroll-padding: 10px;
+  margin: 1em;
+}
+.container_player .player_item{
+  width: 20%;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 

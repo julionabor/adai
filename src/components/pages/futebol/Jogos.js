@@ -210,9 +210,9 @@ function Jogos () {
         <tr>
           <td>01/04/2023</td>
           <td>ADAI</td>
-          <td>x</td>
+          <td>0x5</td>
           <td>Reguenga Palhota</td>
-          <td></td>
+          <td>-</td>
         </tr>
       </table>
   </Container>

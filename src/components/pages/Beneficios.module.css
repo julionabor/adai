@@ -3,6 +3,10 @@
   display: grid;
 }
 .list {
+  margin: 2em auto;
   display: grid;
-  justify-content: left;
+  text-align: left;
+}
+.list li{
+  margin: 1em;
 }

@@ -79,7 +79,7 @@ function Home () {
           <h3 className={styles.subtitle}>
             Carnaval Em São João da Madeira
           </h3>
-          <div>
+          <div className={styles.carnaval}>
             <video controls width="40%"  muted autoPlay>
               <source src="/video-example.webm" type="video/webm" />
               <source src={video} type="video/mp4" />

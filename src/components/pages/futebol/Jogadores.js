@@ -21,6 +21,8 @@ import russo from '../../../img/jogadores/russo.jpg'
 import arthur from '../../../img/jogadores/arthur.jpg'
 import feitosa from '../../../img/jogadores/feitosa.jpg'
 import raul from '../../../img/jogadores/raul.jpg'
+import vitinho from '../../../img/jogadores/vitinho.jpg'
+import paulo from '../../../img/jogadores/paulo.jpg'
 
 import foto from '../../../img/icons/user.png'
 
@@ -31,7 +33,7 @@ function Jogadores () {
   return (
     <Container>
     <section>
-      <h1>Jogadores</h1>
+      <h1>Jogadores Época 22/23</h1>
       <Voltar />
       <div className={styles.jogadores}>
         <h2>Guarda Redes</h2>
@@ -46,6 +48,38 @@ function Jogadores () {
             <p>Gols Sofridos: 5</p>
           
           </div>
+        </div> */}
+       {/*  <div className={styles.container_player} > 
+          <div className={styles.player_item} >
+            <CardJogador
+            nome="Cristian"
+            posicao="Guarda Redes"
+            idade="31 anos"
+            natural="Minas Gerais/Brasil"
+            foto={christian}
+            />
+         </div>
+          <div className={styles.player_item} >
+            <CardJogador
+            nome="Cristian"
+            posicao="Guarda Redes"
+            idade="31 anos"
+            natural="Minas Gerais/Brasil"
+            foto={christian}
+            />
+         </div>
+          <div className={styles.player_item} >
+            <CardJogador
+            nome="Cristian"
+            posicao="Guarda Redes"
+            idade="31 anos"
+            natural="Minas Gerais/Brasil"
+            foto={christian}
+            />
+         </div>
+       
+         
+          
         </div> */}
         <CardJogador
           nome="Cristian"
@@ -77,7 +111,7 @@ function Jogadores () {
           posicao="Defesa Central"
           idade="24 anos"
           natural="Rio de Janeiro/Brasil"
-          foto={foto}
+          foto={vitinho}
         />
         <CardJogador
           nome="Gegê"
@@ -142,7 +176,7 @@ function Jogadores () {
           posicao="Medio Centro"
           idade="28 anos"
           natural="Minas Gerais/Brasil"
-          foto={foto}
+          foto={paulo}
         />
        
         <CardJogador

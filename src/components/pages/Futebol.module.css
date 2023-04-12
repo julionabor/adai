@@ -11,8 +11,8 @@
 
 .topo {
   display: flex;
-  justify-content: space-around;
-  align-content: flex-start;
+  margin: auto;
+  justify-content: center;
 }
 .poster {
   max-width: 65%;
